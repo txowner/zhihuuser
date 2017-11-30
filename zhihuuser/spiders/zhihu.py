@@ -10,7 +10,7 @@ from zhihuuser.items import UserItem
 class ZhihuSpider(scrapy.Spider):
     name = 'zhihu'
     allowed_domains = ['www.zhihu.com']
-    start_urls = ['http://www.zhihu.com/']
+    # start_urls = ['http://www.zhihu.com/']
     start_user = 'excited-vczh'
 
     # 用户个人主页
