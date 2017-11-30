@@ -102,14 +102,14 @@ DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 
 # redis 连接url配置
 REDIS_URL = 'redis://root:tianxuroot@localhost:6379'    # 本地deeplin
-# REDIS_URL = 'redis://root:tianxuroot@115.159.213.54:6379'
+# REDIS_URL = 'redis://user:passwd@ip:port'
 
 # 配置关闭爬虫后，是否保留redis里面的request有序集合和dupefilter集合  False 不保留，  True 保留
 # SCHEDULER_PERSIST = True    # 当我们设置为True， 在爬虫把整个request和dupefilter队列爬取完后，队列不会被清空
 # 难道，如果保存，每次爬取时由于dupefilter里面已经存在了，就不会重复去爬，这就是传说中的增量爬去？？？
 
 # 配置启动爬虫时，是否清空redis里面的request队列和dupefilter集合
-SCHEDULER_FLUSH_ON_START = True     # True 表示清空， False 表示不清空
+# SCHEDULER_FLUSH_ON_START = True     # True 表示清空， False 表示不清空
 
 # 设置 scheduler 调用下一个 Request对象的 时间， 默认为 0
 # SCHEDULER_IDLE_BEFORE_CLOSE = 0
